@@ -2,16 +2,27 @@
 import data from "../config/Datra";
 ---
 
-<section class="w-full h-fit my-10 flex flex-col gap-10 font-montserrat px-10 md:flex-row items-center justify-around bg-orange-100">
+<section
+    class="w-full h-fit mt-10 md:mt-32 flex flex-col gap-10 font-montserrat px-10 md:flex-row items-center justify-around bg-orange-100"
+>
     {
         data.map((data) => (
-            <article class="w-full md:w-1/4 h-24  bg-orange-200 flex gap-3 items-center justify-center rounded-full">
+            <article class="w-full md:w-1/4 h-24 shadowed bg-orange-200 flex gap-3 items-center justify-center rounded-xl">
                 <div class="flex items-center gap-2">
                     <span class="text-orangeSec text-5xl font-black">+</span>
-                    <p class="text-darkblue text-4xl font-bold">{data.amount}</p>
+                    <p class="text-darkblue text-4xl font-bold">
+                        {data.amount}
+                    </p>
                 </div>
                 <p class="text-3xl">{data.title}</p>
             </article>
         ))
     }
 </section>
+
+<style>
+    .shadowed {
+        box-shadow:  5px 5px 18px #c5c5c5,
+             -5px -5px 18px #fbfbfb;
+    }
+</style>
