@@ -1,4 +1,5 @@
 ---
+import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import TopIndex from "../components/TopIndex.astro";
 ---
@@ -12,10 +13,22 @@ import TopIndex from "../components/TopIndex.astro";
 		<title>Organización y Desarrollo</title>
 		<link rel="stylesheet" href="../styles/base.css">
 	</head>
-	<body>
+	<body class="w-full min-h-screen flex flex-col jus items-center">
 		<TopIndex />
-		<main class="w-full h-[800px] bg-orange-100">
-			<div></div>
+		<main class="w-full h-[800px] flex flex-col gap-10 pt-10 items-center bg-orange-100 font-montserrat">
+			<div class="w-12 h-3 mb-5 text-center border-2 rounded-full bg-orangeMain"></div>
+			<div class="w-full flex flex-col items-center gap-8">
+				<h2 class="text-5xl font-bold text-center text-darkblue">¿POR QUÉ ELEGIRNOS?</h2>
+				<div class="w-9/12 flex items-center gap-10">
+					<div class="w-1/2 h-56 rounded-2xl bg-cover bg-center" style="background-image: url('assets/info.webp');"></div>
+					<p class="w-1/2 text-md leading-relaxed">
+						Somos un equipo multidisciplinario comprometido en proveer servicios empresariales de excelencia. <br>
+						Nuestra meta es ayudar a nuestros clientes a alcanzar sus objetivos tanto organizacionales como personales. <br>
+						Para logarar esto, ofrecemos servicios de desarrrollo, asesoría, formación y gestión que están diseñados para acompañar a nuestros clientes en todo momento.
+					</p>
+				</div>
+			</div>
 		</main>
+		<Footer />
 	</body>
 </html>

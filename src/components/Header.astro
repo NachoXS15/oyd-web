@@ -2,27 +2,15 @@
 import { Image } from "astro:assets";
 import logo from '../assets/logo_header.png'
 ---
-
-<!-- <header id="header" class="w-full h-24 py-4 fixed flex items-center justify-around text-white transition" style="font-family: Montserrat, sans-serif">
-    <nav class="flex items-center gap-10">
-        <a href="" class="font-bold hover:scale-110 transition">SERVICIOS</a>
-        <a href="" class="font-bold hover:scale-110 transition">NOSOTROS</a>
-    </nav>
-    <a href="/"><Image src={logo} width={200} alt="logo" /></a>
-    <nav class="flex items-center gap-10">
-        <a href="" class="font-bold hover:scale-110 transition">CLIENTES</a>
-        <a href="" class="font-bold hover:scale-110 transition">CONTACTO</a>
-    </nav>
-</header> -->
-<nav id="header" class="w-full h-24 py-6 px-10 md:px-0 flex justify-between md:justify-around items-center bg-semi-black text-white fixed">
+<nav id="header" class="w-full h-20 py-8 px-10 md:px-0 flex justify-between md:justify-around items-center bg-semi-black text-white fixed transition">
     <div aria-hidden class="hidden md:block">
-        <a class="font-medium" href="/skills" style="margin-right: 20px;">SKILLS</a>
-        <a class="font-medium" href="/estudios">ESTUDIOS</a>
+        <a class="font-bold" href="/skills" style="margin-right: 20px;">SERVICIOS</a>
+        <a class="font-bold" href="/estudios">NOSOTROS</a>
     </div>
     <a href="/"><Image src={logo} alt="logo" width={200} /></a>
     <div aria-hidden class="hidden md:block">
-        <a class="font-medium" href="/project" style="margin-right: 20px;">PROYECTOS</a>
-        <a class="font-medium" href="/">CONTACT</a>
+        <a class="font-bold" href="/project" style="margin-right: 20px;">CLIENTES</a>
+        <a class="font-bold" href="/">CONTACTO</a>
     </div>
     <button id="menu-button"
       data-collapse-toggle="navbar-sticky"
@@ -48,13 +36,13 @@ import logo from '../assets/logo_header.png'
       </svg>
     </button>
 </nav>
-<div class="hidden md:hidden bg-darkblue py-6 w-full bg-semi-black absolute top-20 z-50"  id="menu-open">
+<div class="hidden md:hidden bg-darkblue py-6 w-full bg-semi-black absolute top-20 z-50 transition"  id="menu-open">
     <div class="w-full bg-semi-black bg-opacity-20 h-fit z-50">
-        <nav class="w-full flex flex-col gap-4 p-5 font-medium">
-            <a class="font-medium text-white" href="" style="margin-right: 20px;">SKILLS</a>
-            <a class="font-medium text-white" href="">EDUCACIÓN</a>
-            <a class="font-medium text-white" href="/project">PROYECTOS</a>
-            <a class="font-medium text-white" href="/">CONTACTO</a>
+        <nav class="w-full flex flex-col gap-4 p-5 font-bold">
+            <a class="font-bold text-white" href="" style="margin-right: 20px;">SERVICIOS</a>
+            <a class="font-bold text-white" href="">NOSOTROS</a>
+            <a class="font-bold text-white" href="/project">CLIENTES</a>
+            <a class="font-bold text-white" href="/">CONTACTO</a>
         </nav>
     </div>
 </div>
@@ -77,12 +65,3 @@ import logo from '../assets/logo_header.png'
         menuOpen.classList.toggle("hidden");
     });
 </script>
-<!-- <header class="w-full h-32 flex items-center justify-around bg-orangeSec text-white" style="font-family: Montserrat, sans-serif">
-    <a href="/"><img src="assets/logo_header.png" width="200" alt=""></a>
-    <nav class="flex items-center gap-10">
-        <a href="" class="font-bold">SERVICIOS</a>
-        <a href="" class="font-bold">SOBRE NOSOTROS</a>
-        <a href="" class="font-bold">CLIENTES</a>
-        <a href="" class="font-bold">CONTACTO</a>
-    </nav>
-</header> -->
