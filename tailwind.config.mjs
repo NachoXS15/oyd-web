@@ -8,6 +8,9 @@ export default {
 				orangeSec: "#d77210",
 				white: "#FFFFFF",
 				darkblue: "#151f27"
+			},
+			fontFamily:{
+				montserrat: ["Montserrat", "sans-serif"]
 			}
 		},
 	},
